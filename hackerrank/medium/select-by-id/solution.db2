@@ -6,4 +6,4 @@
     3. Type your code immediately after comment. Don't leave any blank line.
 */
 
-SELECT * FROM CITY;
+SELECT * FROM CITY WHERE ID = 1661;
