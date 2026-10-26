@@ -6,4 +6,4 @@
     3. Type your code immediately after comment. Don't leave any blank line.
 */
 
-SELECT NAME FROM CITY WHERE COUNTRYCODE = 'JPN';
+SELECT * FROM CITY WHERE COUNTRYCODE = 'JPN';
