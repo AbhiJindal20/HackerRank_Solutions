@@ -6,4 +6,4 @@
     3. Type your code immediately after comment. Don't leave any blank line.
 */
 
-SELECT NAME FROM CITY WHERE COUNTRYCODE = 'USA' AND population > 120000;
+SELECT * FROM CITY;
