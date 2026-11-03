@@ -53,7 +53,7 @@ The input of each test case is as follows:
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-03T18:36:56.425Z  
+**Submitted:** 2026-11-03T18:37:19.654Z  
 
 ```cpp
 
