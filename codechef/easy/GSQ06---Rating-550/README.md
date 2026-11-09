@@ -4,31 +4,28 @@
 
 ## Problem
 
-### How to insert to a table
+### Debug this query
 
 Listen
 
-Write a query to add the below mentioned employee details to the 'employee' table.
+The Query written in the console is trying to insert data to the table employee.
+ **Debug this query**  to output the entire table.
+
+Your table is named 'employee' and has the following columns
+
+- Id (INT)
+- Name (TEXT),
+- Age (INT),
+- Address (TEXT)
+### Expected output
 
 ```
-  Employee_id - 6, 
-  Employee_Name - 'Brandon Kim', 
-  Department - 'Operations'
-
-```
-
-Refer to the  **employee**  table created in the previous problem.
-
-```
-┌─────────────┬────────────────┬────────────┐
-│ Employee_id │ Employee_Name  │ Department │
-├─────────────┼────────────────┼────────────┤
-│ 1           │ Kayla Thompson │ Sales      │
-│ 2           │ Ethan Chen     │ Operations │
-│ 3           │ Julia Lee      │ Hr         │
-│ 4           │ Marcus Garcia  │ Product    │
-│ 5           │ Samantha Park  │ Operations │
-└─────────────┴────────────────┴────────────┘
+┌────┬───────────────┬─────┬──────────────┐
+│ Id │     Name      │ Age │   Address    │
+├────┼───────────────┼─────┼──────────────┤
+│ 1  │ John Smith    │ 25  │ 123 Main St  │
+│ 2  │ Sarah Johnson │ 30  │ 456 Broadway │
+└────┴───────────────┴─────┴──────────────┘
 
 ```
 
@@ -37,15 +34,17 @@ Refer to the  **employee**  table created in the previous problem.
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-09T19:03:59.381Z  
+**Submitted:** 2026-11-09T19:05:02.355Z  
 
 ```sql
-/* Write a query to add the below mentioned employee details to the EMPLOYEE table.
-Employee id: 06, Employee Name: Brandon Kim, Department: Operations
-*/
+/* The Query written in the console is trying to insert data to the table employee.
+Debug this query to output the entire table */
 
-INSERT INTO employee(Employee_id, Employee_Name, Department) 
-VALUES (6, 'Brandon Kim', 'Operations');
+INSERT INTO employee (Id,Name,Age,Address)
+VALUES  (1, 'John Smith', 25,  '123 Main St'),
+        (2, 'Sarah Johnson', 30,'456 Broadway');
+
+SELECT * FROM employee; 
 ```
 
 ---
