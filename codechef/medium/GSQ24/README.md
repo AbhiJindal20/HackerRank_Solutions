@@ -1,0 +1,58 @@
+# GSQ24
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
+
+## Problem
+
+### OR
+
+Listen
+
+The  **OR**  clause is used along with  **WHERE**  to filter the table which meets any one of the given multiple conditions.
+
+Check the following syntax -  **OR**  combines the two conditions.
+
+```
+select * from Flights
+where origin = 'Mumbai'
+or origin = 'New York';
+
+```
+
+Any query containing  **OR**  will return a result if  **ANY**  of the conditions is  **TRUE**.
+
+### Task
+
+Now - write a query that returns the rows which meet the following conditions - Either Origin is Mumbai or the Destination is Mumbai
+
+```
+┌──────────────┬────────────────┬────────┬──────────┬─────────────┐
+│ Passenger_id │ Passenger_name │ Gender │  Origin  │ Destination │
+├──────────────┼────────────────┼────────┼──────────┼─────────────┤
+│ 10001        │ Jackson        │ Male   │ Mumbai   │ New York    │
+│ 10002        │ Riya           │ Female │ Mumbai   │ Delhi       │
+│ 10004        │ Anthony        │ Male   │ Mumbai   │ Cairo       │
+│ 10008        │ Dia            │ Female │ Beijing  │ Mumbai      │
+│ 10009        │ Riya           │ Female │ Damascus │ Mumbai      │
+└──────────────┴────────────────┴────────┴──────────┴─────────────┘
+
+```
+
+## Solution
+
+**Language:** SQL  
+**Runtime:** N/A  
+**Memory:** N/A  
+**Submitted:** 2026-11-10T20:11:51.741Z  
+
+```sql
+/*write a query that returns the rows which meet the following conditions
+- Either Origin is Mumbai or the Destination is Mumbai */
+
+SELECT * FROM Flights
+WHERE Origin = 'Mumbai' OR Destination = 'Mumbai';
+```
+
+---
+
+[View on CodeChef](https://www.codechef.com/problems/GSQ24)
