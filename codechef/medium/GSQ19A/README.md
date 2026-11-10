@@ -50,7 +50,7 @@ Expected Output
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-10T19:38:28.888Z  
+**Submitted:** 2026-11-10T19:38:43.571Z  
 
 ```sql
 /* Write a query to do the following
